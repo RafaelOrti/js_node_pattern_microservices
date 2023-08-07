@@ -1,0 +1,331 @@
+project-root/
+├── microservices/
+│   ├── services/
+│   │   ├── service1/
+│   │   │   ├── controllers/
+│   │   │   │   └── index.js
+│   │   │   ├── models/
+│   │   │   │   └── User.js
+│   │   │   ├── routes/
+│   │   │   │   └── index.js
+│   │   │   ├── services/
+│   │   │   │   └── userService.js
+│   │   │   ├── validations/
+│   │   │   │   └── userValidations.js
+│   │   │   └── index.js
+│   │   ├── service2/
+│   │   │   ├── controllers/
+│   │   │   │   └── index.js
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── validations/
+│   │   │   └── index.js
+│   │   ├── service3/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── validations/
+│   │   │   └── index.js
+│   │   └── ...
+│   ├── shared/
+│   │   ├── utils/
+│   │   │   ├── logger.js
+│   │   │   └── ...
+│   │   ├── exceptions/
+│   │   │   ├── BadRequestException.js
+│   │   │   └── ...
+│   │   └── ...
+│   ├── config/
+│   │   ├── service1/
+│   │   │   ├── development.json
+│   │   │   ├── production.json
+│   │   │   ├── staging.json
+│   │   │   └── ...
+│   │   ├── service2/
+│   │   │   ├── development.json
+│   │   │   ├── production.json
+│   │   │   ├── staging.json
+│   │   │   └── ...
+│   │   └── database.js
+│   │   └── ...
+│   ├── infrastructure/
+│   │   ├── scripts/
+│   │   │   ├── provisioning.sh
+│   │   │   ├── deployment.sh
+│   │   │   ├── backup.sh
+│   │   │   └── ...
+│   │   ├── database/
+│   │   │   ├── migrations/
+│   │   │   └── seeds/
+│   │   └── ...
+│   ├── app.js
+│   ├── server.js
+│   ├── package.json
+│   └── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+└── ...
+
+
+
+
+
+
+
+
+
+
+
+project-root/
+├── microservices/
+│   ├── services/
+│   │   ├── service1/
+│   │   │   ├── controllers/
+│   │   │   │   ├── UserController.js
+│   │   │   │   └── ...
+│   │   │   ├── models/
+│   │   │   │   ├── User.js
+│   │   │   │   └── ...
+│   │   │   ├── routes/
+│   │   │   │   ├── userRoutes.js
+│   │   │   │   └── ...
+│   │   │   ├── services/
+│   │   │   │   ├── UserService.js
+│   │   │   │   └── ...
+│   │   │   ├── validations/
+│   │   │   │   ├── userValidations.js
+│   │   │   │   └── ...
+│   │   │   └── index.js
+│   │   ├── service2/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── validations/
+│   │   │   └── index.js
+│   │   └── ...
+│   ├── shared/
+│   │   ├── utils/
+│   │   │   ├── logger.js
+│   │   │   └── ...
+│   │   ├── exceptions/
+│   │   │   ├── BadRequestException.js
+│   │   │   └── ...
+│   │   └── ...
+│   ├── config/
+│   │   ├── service1/
+│   │   │   ├── development.json
+│   │   │   ├── production.json
+│   │   │   ├── staging.json
+│   │   │   └── ...
+│   │   ├── service2/
+│   │   │   ├── development.json
+│   │   │   ├── production.json
+│   │   │   ├── staging.json
+│   │   │   └── ...
+│   │   └── database.js
+│   │   └── ...
+│   ├── infrastructure/
+│   │   ├── scripts/
+│   │   │   ├── provisioning.sh
+│   │   │   ├── deployment.sh
+│   │   │   ├── backup.sh
+│   │   │   └── ...
+│   │   ├── database/
+│   │   │   ├── migrations/
+│   │   │   ├── seeds/
+│   │   │   └── ...
+│   │   └── ...
+│   ├── app.js
+│   ├── server.js
+│   ├── package.json
+│   └── .gitignore
+└── ...
+
+
+
+
+para que sirve la careta shared
+ChatGPT
+La carpeta "shared" (compartido) en un proyecto basado en el patrón de diseño de microservicios generalmente se utiliza para almacenar componentes, utilidades o funciones que pueden ser compartidas entre varios servicios dentro del sistema. Esta carpeta tiene el propósito de evitar la duplicación de código y promover la reutilización.
+
+Algunos ejemplos de lo que podrías encontrar dentro de la carpeta "shared" son:
+
+Utilidades: Funciones de utilidad que son utilizadas por múltiples servicios. Por ejemplo, funciones para la manipulación de fechas, encriptación, validación de datos, etc.
+
+Bibliotecas: Módulos o bibliotecas personalizadas que encapsulan func
+
+
+microservices-app/
+│
+├── services/
+│   ├── auth-service/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── routes/
+│   │   │   └── index.js
+│   │   ├── test/
+│   │   ├── package.json
+│   │   ├── Dockerfile
+│   │   └── ...
+│   │
+│   ├── user-service/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── routes/
+│   │   │   └── index.js
+│   │   ├── test/
+│   │   ├── package.json
+│   │   ├── Dockerfile
+│   │   └── ...
+│   │
+│   ├── order-service/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   ├── routes/
+│   │   │   └── index.js
+│   │   ├── test/
+│   │   ├── package.json
+│   │   ├── Dockerfile
+│   │   └── ...
+│   │
+│   └── ...
+│
+├── common/
+│   ├── utils/
+│   ├── constants/
+│   ├── middlewares/
+│   ├── validators/
+│   └── ...
+│
+├── shared-libraries/
+│   ├── logging/
+│   ├── messaging/
+│   └── ...
+│
+├── config/
+│   ├── development.json
+│   ├── production.json
+│   └── ...
+│
+├── deployments/
+│   ├── kubernetes/
+│   │   ├── auth-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   ├── user-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   ├── order-service/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ...
+│   │   └── ...
+│   ├── docker-compose.yaml
+│   ├── helm-charts/
+│   │   ├── auth-service/
+│   │   │   ├── Chart.yaml
+│   │   │   ├── values.yaml
+│   │   │   └── ...
+│   │   ├── user-service/
+│   │   │   ├── Chart.yaml
+│   │   │   ├── values.yaml
+│   │   │   └── ...
+│   │   ├── order-service/
+│   │   │   ├── Chart.yaml
+│   │   │   ├── values.yaml
+│   │   │   └── ...
+│   │   └── ...
+│   └── ...
+│
+├── scripts/
+│   ├── setup.sh
+│   ├── deploy.sh
+│   ├── test.sh
+│   └── ...
+│
+├── .gitignore
+├── .env.example
+├── package.json
+└── README.md
+
+
+
+
+microservices_project/
+|-- .gitignore
+|-- .dockerignore
+|-- .env.example
+|-- docker-compose.yml
+|-- README.md
+|-- CODE_OF_CONDUCT.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- CHANGELOG.md
+|-- .github/
+|   |-- workflows/
+|   |   |-- ci.yml
+|   |   |-- cd.yml
+|-- config/
+|   |-- global/
+|   |   |-- config.js
+|   |   |-- logger.js
+|   |-- services/
+|   |   |-- service1/
+|   |   |   |-- service_config.js
+|   |   |   |-- database_config.js
+|   |   |-- service2/
+|   |   |   |-- ...
+|-- services/
+|   |-- service1/
+|   |   |-- src/
+|   |   |   |-- api/
+|   |   |   |   |-- controllers/
+|   |   |   |   |-- middlewares/
+|   |   |   |   |-- routes/
+|   |   |   |-- config/
+|   |   |   |   |-- service_config.js
+|   |   |   |   |-- database_config.js
+|   |   |   |-- lib/
+|   |   |   |   |-- database/
+|   |   |   |   |-- logger/
+|   |   |   |-- models/
+|   |   |   |-- tests/
+|   |   |   |   |-- integration/
+|   |   |   |   |-- unit/
+|   |   |-- Dockerfile
+|   |   |-- package.json
+|   |   |-- README.md
+|   |   |-- .dockerignore
+|   |-- service2/
+|   |   |-- src/
+|   |   |   |-- ...
+|   |   |-- Dockerfile
+|   |   |-- package.json
+|   |   |-- README.md
+|   |   |-- .dockerignore
+|-- common/
+|   |-- service-interfaces/
+|   |-- events/
+|-- shared/
+|   |-- utils/
+|   |-- middlewares/
+|-- scripts/
+|   |-- deploy.sh
+|   |-- ...
+|-- documentation/
+|   |-- architecture.md
+|   |-- deployment.md
+|-- package.json
+
+

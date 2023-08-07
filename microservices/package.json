@@ -1,0 +1,19 @@
+{
+  "name": "microservices-project",
+  "version": "1.0.0",
+  "description": "A project using microservices architecture",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "winston": "^3.3.3",
+    "express-validator": "^7.5.1"
+  },
+  "devDependencies": {
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
