@@ -1,0 +1,8 @@
+{
+  "database": {
+    "url": "mongodb://production-db-url/service2"
+  },
+  "api": {
+    "port": 8081
+  }
+}

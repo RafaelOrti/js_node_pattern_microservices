@@ -1,0 +1,8 @@
+{
+  "database": {
+    "url": "mongodb://localhost:27017/service1_dev"
+  },
+  "api": {
+    "port": 3000
+  }
+}

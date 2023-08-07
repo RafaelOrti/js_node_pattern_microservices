@@ -1,0 +1,9 @@
+
+{
+  "database": {
+    "url": "mongodb://staging-db-url/service2"
+  },
+  "api": {
+    "port": 7071
+  }
+}
