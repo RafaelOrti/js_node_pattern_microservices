@@ -1,4 +1,4 @@
-# Microservices Project
+# Microservices Project (No scalable, only pattern learning purposes)
 
 Welcome to the Microservices Project! This project is organized into microservices to achieve scalability, maintainability, and flexibility.
 
